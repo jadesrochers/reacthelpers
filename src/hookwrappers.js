@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as R from 'ramda';
 import fps from '@jadesrochers/fpstreamline'
-import { passExceptChildren } from '../passprops'
+import { passExceptChildren } from './passprops'
 
 
 const HookWrapper = (props) => {

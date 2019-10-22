@@ -3,7 +3,7 @@
     "version": "0.1.1",
     "license": "MIT",
     "author": "Jared Desrochers",
-    "main": "index.js",
+    "main": "dist/bundle.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/jadesrochers/reacthelpers.git"
@@ -20,13 +20,20 @@
         "react-dom": "^16.8.6"
     },
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "build": "rollup -c"
     },
     "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3",
+        "@babel/preset-react": "^7.6.3",
+        "babel-loader": "^8.0.6",
+        "eslint": "^6.4.0",
+        "eslint-config-problems": "^3.0.1",
+        "jest": "^24.9.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
-        "jest": "^24.9.0",
-        "eslint": "^6.4.0",
-        "eslint-config-problems": "^3.0.1"
+        "rollup": "^1.25.1",
+        "rollup-plugin-babel": "^4.3.3"
     }
 }
