@@ -11,16 +11,20 @@
     "description": "A React Component for making interactive SVG elements",
     "keywords": [],
     "dependencies": {
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
         "@jadesrochers/fpstreamline": "^0.1.0",
         "ramda": "^0.26.1",
         "d3-format": "^1.3.2"
+    },
+    "peerDependencies":{
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
     },
     "scripts": {
         "test": "jest"
     },
     "devDependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
         "jest": "^24.9.0",
         "eslint": "^6.4.0",
         "eslint-config-problems": "^3.0.1"
