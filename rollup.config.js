@@ -8,11 +8,8 @@ export default {
     external: ['react'],
     output: {
         file: './dist/bundle.js',
-        format: 'iife',
+        format: 'cjs',
         name: 'bundle',
-        globals: {
-        'react': '_.React'
-      }
     },
     plugins: [
         babel({
