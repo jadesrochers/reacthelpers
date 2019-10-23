@@ -5,11 +5,19 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
     input: './index.js',
-    external: ['react'],
+    external: ['react', 'react-dom'],
     output: {
         file: './dist/bundle.js',
         format: 'cjs',
         name: 'bundle',
+    },
+    output: {
+        file: './dist/web.js',
+        format: 'iife',
+        name: 'bundle',
+        globals: {
+        'react': 'React'
+      }
     },
     plugins: [
         babel({
