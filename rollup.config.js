@@ -1,29 +1,37 @@
 import babel from 'rollup-plugin-babel';
-/* import autoExternal from 'rollup-plugin-auto-external'; */
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
+import filesize from 'rollup-plugin-filesize';
 
 export default {
     input: './index.js',
-    external: ['react', 'react-dom'],
-    output: {
-        file: './dist/bundle.js',
-        format: 'cjs',
-        name: 'bundle',
-    },
-    output: {
-        file: './dist/web.js',
+    external: ['react', 'react-dom', 'ramda'],
+    output: [
+      {
+          file: './dist/cjs.js',
+          format: 'cjs',
+          name: 'bundle',
+      },
+      {
+          file: './dist/esm.js',
+          format: 'esm',
+      },
+      {
+        file: './dist/iife.js',
         format: 'iife',
         name: 'bundle',
         globals: {
-        'react': 'React'
+          'ramda': 'ramda',
+          'react': 'React'
+        }
       }
-    },
+    ],
     plugins: [
         babel({
             exclude: 'node_modules/**'
         }),
         resolve(),
-        commonjs()
+        commonjs(),
+        filesize(),
     ]
 }
