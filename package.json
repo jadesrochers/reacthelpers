@@ -3,9 +3,9 @@
     "version": "0.1.7",
     "license": "MIT",
     "author": "Jared Desrochers",
-    "main": "dist/cjs.js",
-    "browser": "dist/iife.js",
-    "module": "dist/esm.js",
+    "main": "build/cjs.js",
+    "browser": "build/iife.js",
+    "module": "build/esm.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/jadesrochers/reacthelpers.git"
