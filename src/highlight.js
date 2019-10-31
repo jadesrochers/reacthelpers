@@ -22,7 +22,9 @@ const deHighlightStyling = R.curry(function(original,current){
 
 // The 'original' arg is passed by shareStyling so the fcns can read/write
 // to it
-const [highlight, deHighlight] = shareStyling(highlightStyling, deHighlightStyling)
+const createHighlight = () => shareStyling(highlightStyling, deHighlightStyling)
+//const [highlight, deHighlight] = createHighlight()
 
-export { highlight, deHighlight }
+
+export { createHighlight }
 
