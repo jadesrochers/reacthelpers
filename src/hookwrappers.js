@@ -45,4 +45,4 @@ const HooktoChildren = (props) => {
   )
 }
 
-export { HookWrapper, HookForceWrapper, HooktoChildren, SvgWrapper }
+export { HookWrapper, HookForceWrapper, SvgWrapper }

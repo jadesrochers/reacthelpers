@@ -11,7 +11,11 @@
     },
     "description": "A React Component for making interactive SVG elements",
     "keywords": [
-        "react"
+        "react",
+        "children",
+	"props",
+	"testing",
+	"wrappers"
     ],
     "dependencies": {
         "@jadesrochers/fpstreamline": "^0.1.0",

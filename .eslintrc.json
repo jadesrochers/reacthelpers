@@ -1,9 +1,19 @@
 {
-  "extends": "problems",
-  "env": {
-  "node": true
+  "extends":  [
+    "problems",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "no-var": "warn"
   },
-  "pareserOptions": {
-    "ecmaVersion": 2018
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "allowImportExportEveryWhere": true
   }
 }
