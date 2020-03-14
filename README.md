@@ -39,7 +39,7 @@ to be passed when doing this.
 ```javascript
 // Pass given props to children, avoiding passing children
 let pass = R.pipe(R.dissoc('height'), R.dissoc('width'))(props)
-pass = { ...pass, var1: val1, var2: val2}
+pass = { ...pass, var1, var2}
 const propsToChildren = passExceptChildren(pass)
 // Pass all props
 const propsToChildren = passAllProps(props)
