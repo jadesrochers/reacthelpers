@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { map } from 'ramda';
-import fps from '@jadesrochers/fpstreamline'
+import * as R from 'ramda';
+import * as fps from '@jadesrochers/fpstreamline'
 import { passExceptChildren } from './passprops'
 
 
@@ -31,7 +31,7 @@ const SvgWrapper = (props) => {
 
 const HooktoChildren = (props) => {
   let hook = props.hook ? props.hook() : undefined
-  const propsToChildren = map(child => {
+  const propsToChildren = R.map(child => {
     return React.cloneElement(child, 
      {...props,
       select: hook, 

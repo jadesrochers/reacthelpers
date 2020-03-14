@@ -1,6 +1,6 @@
 import React from 'react'
 import * as R from 'ramda';
-import fps from '@jadesrochers/fpstreamline';
+import * as fps from '@jadesrochers/fpstreamline';
 
 const passprops = (pass, children) => {
   if( ! children ){ return undefined }
