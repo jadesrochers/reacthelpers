@@ -45,8 +45,9 @@ const config = {
       commonjs: 'react',
       amd: 'react',
     },
-    'react-dom': 'react-dom',
-    'reactDOM': 'react-dom',
+    'ramda': 'ramda', 
+    'd3-format':'d3-format', 
+    '@jadesrochers/fpstreamline': '@jadesrochers/fpstreamline', 
   },
 
 }
