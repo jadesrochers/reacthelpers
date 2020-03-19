@@ -4,7 +4,7 @@
     "license": "MIT",
     "author": "Jared Desrochers",
     "module": "es/index.js",
-    "main": "dist/reacthelpers-umd.js",
+    "main": "dist/reacthelpers-cjs.js",
     "sideEffects": false,
     "repository": {
         "type": "git",
@@ -25,7 +25,7 @@
         "wrappers"
     ],
     "dependencies": {
-        "@jadesrochers/fpstreamline": "^0.1.5",
+        "@jadesrochers/fpstreamline": "^0.1.7",
         "d3-format": "^1.4.3",
         "ramda": "^0.27.0"
     },
@@ -37,8 +37,8 @@
         "test": "BABEL_ENV=jest jest",
         "build-es": "BABEL_ENV=es6 babel --out-dir es --ignore '**/__tests__/','**/enzyme.js'  src",
         "build-umd-roll": "BABEL_ENV=umd rollup --config ./rollup.config.js",
-        "packagePatch": "npm run test && npm run build-es && npm run build-umd-roll && npm version patch && npm publish && git push -u origin master",
-        "packageMinor": "npm run test && npm run build-es && npm run build-umd-roll && npm version minor && npm publish && git push -u origin master",
+        "packagePatch": "npm run build-es && npm run build-umd-roll && npm version patch && npm publish && git push -u origin master",
+        "packageMinor": "npm run build-es && npm run build-umd-roll && npm version minor && npm publish && git push -u origin master",
         "CommitandPackage": "./CommitandPackage.sh"
     },
     "devDependencies": {

@@ -9,8 +9,8 @@ export default {
     external: ['react', 'ramda', '@jadesrochers/fpstreamline', 'd3-format' ],
     output: [
       {
-          format: 'umd',
-          file: './dist/reacthelpers-umd.js',
+          format: 'cjs',
+          file: './dist/reacthelpers-cjs.js',
           name: 'reacthelpers',
       },
     ],
