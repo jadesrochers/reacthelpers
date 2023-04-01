@@ -38,7 +38,7 @@
         "test-watch": "BABEL_ENV=jest jest --watch",
         "build-es": "BABEL_ENV=es6 babel --out-dir es --ignore '**/__tests__/','**/enzyme.js'  src",
         "build-umd-roll": "BABEL_ENV=umd rollup --config ./rollup.config.js",
-        "build-umd-webp": "BABEL_ENV=umd webpack --config ./webpack.config.js --display-modules",
+        "build-umd-webp": "BABEL_ENV=umd webpack --config ./webpack.config.js --stats-modules-space 999",
         "packagePatch": "npm run build-es && npm run build-umd-webp && npm version patch && npm publish && git push -u origin master",
         "packageMinor": "npm run build-es && npm run build-umd-webp && npm version minor && npm publish && git push -u origin master",
         "CommitandPackage": "./CommitandPackage.sh"
