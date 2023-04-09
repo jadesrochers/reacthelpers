@@ -3,8 +3,6 @@
     "version": "0.4.1",
     "license": "MIT",
     "author": "Jared Desrochers",
-    "module": "es/index.js",
-    "main": "dist/reacthelpers-umd.js",
     "sideEffects": false,
     "repository": {
         "type": "git",
@@ -17,8 +15,9 @@
         "LICENSE"
     ],
     "exports": {
-        "./nodejs": "./dist",
-        "./web": "./es"
+        "default": "./dist/reacthelpers-umd.js",
+	"node": "./dist/reacthelpers-umd.js",
+        "browser": "./es/index.js"
     },
     "description": "A React Component for making interactive SVG elements",
     "keywords": [
