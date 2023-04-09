@@ -1,6 +1,6 @@
 {
     "name": "@jadesrochers/reacthelpers",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "license": "MIT",
     "author": "Jared Desrochers",
     "module": "es/index.js",
@@ -17,8 +17,8 @@
         "LICENSE"
     ],
     "exports": {
-      "./nodejs": "./dist",
-      "./web": "./es"
+        "./nodejs": "./dist",
+        "./web": "./es"
     },
     "description": "A React Component for making interactive SVG elements",
     "keywords": [
