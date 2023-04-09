@@ -16,6 +16,10 @@
         "README.md",
         "LICENSE"
     ],
+    "exports": {
+      "./nodejs": "./dist",
+      "./web": "./es"
+    },
     "description": "A React Component for making interactive SVG elements",
     "keywords": [
         "react",
