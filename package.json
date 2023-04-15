@@ -1,6 +1,6 @@
 {
     "name": "@jadesrochers/reacthelpers",
-    "version": "0.4.3",
+    "version": "0.4.4",
     "license": "MIT",
     "author": "Jared Desrochers",
     "sideEffects": false,
@@ -8,7 +8,7 @@
         "type": "git",
         "url": "https://github.com/jadesrochers/reacthelpers.git"
     },
-    "main":  "./dist/reacthelpers-umd.js",
+    "main": "./dist/reacthelpers-umd.js",
     "exports": {
         "import": "./es/index.js",
         "require": "./dist/reacthelpers-umd.js",
