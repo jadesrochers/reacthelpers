@@ -8,17 +8,19 @@
         "type": "git",
         "url": "https://github.com/jadesrochers/reacthelpers.git"
     },
+    "main":  "./dist/reacthelpers-umd.js",
+    "exports": {
+        "import": "./es/index.js",
+        "require": "./dist/reacthelpers-umd.js",
+        "node": "./dist/reacthelpers-umd.js",
+        "default": "./dist/reacthelpers-umd.js"
+    },
     "files": [
         "es/",
         "dist/",
         "README.md",
         "LICENSE"
     ],
-    "exports": {
-        "node": "./dist/reacthelpers-umd.js",
-        "browser": "./es/index.js",
-        "default": "./dist/reacthelpers-umd.js"
-    },
     "description": "A React Component for making interactive SVG elements",
     "keywords": [
         "react",
