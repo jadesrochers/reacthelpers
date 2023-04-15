@@ -15,9 +15,9 @@
         "LICENSE"
     ],
     "exports": {
-        "default": "./dist/reacthelpers-umd.js",
         "node": "./dist/reacthelpers-umd.js",
-        "browser": "./es/index.js"
+        "browser": "./es/index.js",
+        "default": "./dist/reacthelpers-umd.js"
     },
     "description": "A React Component for making interactive SVG elements",
     "keywords": [
@@ -51,6 +51,8 @@
         "@babel/core": "^7.8.7",
         "@babel/preset-env": "^7.8.7",
         "@babel/preset-react": "^7.8.3",
+        "@emotion/babel-plugin": "^11.3.0",
+        "@emotion/jest": "^11.1.0",
         "babel-loader": "^9.0.0",
         "eslint": "^8.0.0",
         "eslint-config-problems": "^7.0.0",
