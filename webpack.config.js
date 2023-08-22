@@ -8,7 +8,7 @@ const path = require('path');
 // Webpack will still include a ref to it, so you need the externals:
 // statement for sure.
 const config = {
-  entry: './src/index.js',
+  entry: './src/index.mjs',
 
   mode: 'production',
 

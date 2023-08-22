@@ -5,7 +5,7 @@ import terser from "@rollup/plugin-terser";
 import filesize from 'rollup-plugin-filesize';
 
 export default {
-    input: './src/index.js',
+    input: './src/index.mjs',
     external: ['react', 'ramda', '@jadesrochers/fpstreamline', 'd3-format' ],
     output: [
       {
